@@ -8,3 +8,9 @@ Learning nlp and reproduce some papers
 同样在阅读论文但是有困惑的可以通过阅读代码理解论文作者的思路
 
 同样代码中若有问题欢迎指正
+
+doc2vec:复现 “Distributed Representations of Sentences and Documents”
+
+Sentence2vec:复现 “A SIMPLE BUT TOUGH-TO-BEAT BASELINE FOR SENTENCE EMBEDDINGS”
+
+FastText_Subword:复现 “Enriching Word Vectors with Subword Information”
