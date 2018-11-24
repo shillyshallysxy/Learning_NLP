@@ -12,7 +12,7 @@ import tensorflow as tf
 freq_table_path = 'movie_vocab_freq.pkl'
 word_dict_path = 'movie_vocab.pkl'
 ckp_name = 'cbow_movie_embeddings.ckpt'
-data_folder_name = 'G:\\python\DeepLearning\learn_tensorflow\part7\\temp'
+data_folder_name = '../temp'
 embedding_size = 200
 batch_size = 512
 hidden_size1 = 128
