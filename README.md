@@ -14,3 +14,5 @@ doc2vec:复现 “Distributed Representations of Sentences and Documents”
 Sentence2vec:复现 “A SIMPLE BUT TOUGH-TO-BEAT BASELINE FOR SENTENCE EMBEDDINGS”
 
 FastText_Subword:复现 “Enriching Word Vectors with Subword Information”
+
+imp_rnn：自己撸了一个不太好用的rnn以加深理解
