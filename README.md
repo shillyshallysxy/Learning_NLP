@@ -9,6 +9,8 @@ Learning nlp and reproduce some papers
 
 同样代码中若有问题欢迎指正
 
+Bi-LSTM-CRF：实现双向LSTM+CRF的中文分词模型（配合temp中的cn_nlp文件食用）
+
 doc2vec:复现 “Distributed Representations of Sentences and Documents”
 
 Sentence2vec:复现 “A SIMPLE BUT TOUGH-TO-BEAT BASELINE FOR SENTENCE EMBEDDINGS”
