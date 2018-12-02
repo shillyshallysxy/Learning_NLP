@@ -66,41 +66,6 @@ def __parse_function(serial_exmp):
     return text_, label_, lens_
 
 
-# write_binary(train_record_name, texts_train, target_train, lengths_train)
-# write_binary(test_record_name, texts_test, target_test, lengths_test)
-
-record_path = os.path.join(data_folder_name, data_path_name, train_record_name)
-dataset = tf.data.TFRecordDataset(record_path)
-dataset = dataset.map(__parse_function)
-data_train = dataset.shuffle(1000).repeat(10).padded_batch(10, padded_shapes=([max_len], [max_len], []))
-iter_train = data_train.make_one_shot_iterator()
-# text_data, label_data = iter_train.get_next()
-# with tf.Session() as sess:
-#     for i in range(10):
-#         print(sess.run([text_data, label_data]))
-#         print(sess.run(tf.shape(text_data)))
-#         # print(sess.run(iterator))
-# print('')
-
-
-handle = tf.placeholder(tf.string, shape=[])
-iterator = tf.data.Iterator.from_string_handle(handle, data_train.output_types, data_train.output_shapes)
-x, y_, l_ = iterator.get_next()
-add = tf.add(x, y_)
-# table_name = 'text_table.txt'
-# with open(table_name, 'w') as f:
-#     for word in word_dict.values():
-#         f.write(str(word)+'\n')
-# text_lookup_table = tf.contrib.lookup.index_table_from_file(vocabulary_file=table_name,
-#                                                             num_oov_buckets=1)
-# embed = tf.nn.embedding_lookup(embeddings, x)
-# ids = text_lookup_table.lookup()
-# sess.run(tf.tables_initializer())
-handle_train = sess.run(iter_train.string_handle())
-# print(handle_train)
-# print(sess.run(ids, feed_dict={handle: handle_train}))
-for i in range(2):
-    print(sess.run([x, y_, l_], feed_dict={handle: handle_train}))
-    print(sess.run(tf.shape(y_), feed_dict={handle: handle_train}))
-# print(sess.run(x_split, feed_dict={handle: handle_train}))
+write_binary(train_record_name, texts_train, target_train, lengths_train)
+write_binary(test_record_name, texts_test, target_test, lengths_test)
 
