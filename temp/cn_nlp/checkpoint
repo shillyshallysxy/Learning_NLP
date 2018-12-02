@@ -1,0 +1,2 @@
+model_checkpoint_path: "bilstm_crf_cn.ckpt"
+all_model_checkpoint_paths: "bilstm_crf_cn.ckpt"
