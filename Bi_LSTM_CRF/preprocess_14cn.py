@@ -11,8 +11,8 @@ def character_tagging(input_file_, output_file_):
         # 移除字符串的头和尾的空格。
         word_list = line.strip().split()
         for word in word_list:
-            # words = word.split("/")
-            word = word
+            words = word.split("/")
+            word = words[0]
             if len(word) == 1:
                 if word == '。' or word == '？' or word == '！':
                     output_data.write("\n")
