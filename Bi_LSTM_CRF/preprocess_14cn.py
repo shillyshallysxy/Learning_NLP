@@ -8,7 +8,7 @@ def character_tagging(input_file_, output_file_):
     input_data = codecs.open(input_file_, 'r', 'utf-8')
     output_data = codecs.open(output_file_, 'w', 'utf-8')
     for line in input_data.readlines():
-        # 移除字符串的头和尾的空格。strip()方法默认是移除空格的
+        # 移除字符串的头和尾的空格。
         word_list = line.strip().split()
         for word in word_list:
             # words = word.split("/")
