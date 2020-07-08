@@ -1,6 +1,8 @@
 # Learning_NLP
 Learning nlp and reproduce some papers
 
+该仓库为旧仓库，请转到：https://github.com/shillyshallysxy/Learning_Cloud
+
 正在学习NLP，通过复现一些论文来学习nlp的一些思想
 
 该GitHub用来放置一些复现的代码
